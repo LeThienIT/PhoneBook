@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#232323"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/dialog_name_id"
+            android:textColor="@android:color/white"
+            android:text="@string/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="90dp"></TextView>
+
+        <TextView
+            android:id="@+id/dialog_phone_id"
+            android:textStyle="italic"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:text="Phone Number"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/btn_dialog_call"
+            android:padding="10dp"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/call"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#fff"
+            android:text="@string/call"
+            android:textColor="#111111"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:id="@+id/btn_dialog_mess"
+            android:padding="10dp"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/mess"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#fff"
+            android:text="@string/messenger"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111111"></Button>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/img_dialog"
+            android:src="@drawable/linh"
+            android:layout_width="120dp"
+            android:layout_height="120dp"></ImageView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
